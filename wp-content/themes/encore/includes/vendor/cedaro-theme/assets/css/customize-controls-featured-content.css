@@ -1,0 +1,151 @@
+/* Selected Posts List
+------------------------------------------------------------------------------*/
+
+.ctfc-posts-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.ctfc-post {
+	background: #fff;
+	margin: 0 0 10px 0;
+	padding: 0;
+}
+
+.ctfc-post.ui-sortable-helper {
+	background: #f9f9f9;
+	border-top: 1px solid #dfdfdf;
+	border-bottom: 1px solid #dfdfdf;
+}
+
+.ctfc-post-title {
+	background: #fafafa;
+	border: 1px solid #dfdfdf;
+	cursor: move;
+	margin: 0;
+	padding: 10px 20px;
+	position: relative;
+}
+
+.ctfc-post-title:hover {
+	border-color: #999;
+}
+
+.ctfc-post-toggle {
+	cursor: pointer;
+	display: inline-block;
+	font-family: dashicons;
+	font-size: 16px;
+	-webkit-font-smoothing: antialiased;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1;
+	text-align: center;
+	text-decoration: inherit;
+	vertical-align: top;
+
+	font-size: 20px;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	text-align: right;
+	vertical-align: middle;
+	width: 40px;
+}
+
+.ctfc-post-toggle:before {
+	box-sizing: border-box;
+	color: #aaa;
+	content: "\f140"; /* Down arrow. */
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	bottom: 10px;
+	left: 0;
+	vertical-align: middle;
+}
+
+.ctfc-post-toggle:hover {
+	&:before {
+		color: #777;
+	}
+}
+
+.ctfc-post-inside {
+	border-color: #e5e5e5;
+	border-style: solid;
+	border-width: 0 1px 1px 1px;
+	display: none;
+	margin: 0;
+	padding: 10px;
+}
+
+.ctfc-post-inside input.regular-text {
+	max-width: 100%;
+}
+
+.ctfc-post-actions {
+	clear: both;
+	line-height: 1;
+}
+
+.ctfc-post-actions a {
+	cursor: pointer;
+}
+
+.ctfc-post-actions .ctfc-post-remove:hover {
+	color: #ff0000;
+}
+
+.is-open .ctfc-post-toggle:before {
+	content: "\f142"; /* Up arrow.*/
+}
+
+.is-open .ctfc-post-inside {
+	display: block;
+}
+
+
+/* Find Posts Modal
+------------------------------------------------------------------------------*/
+
+.ctfc-modal-response {
+	position: relative;
+}
+
+.ctfc-modal-search input {
+	float: left;
+}
+
+.ctfc-modal-search-field {
+	height: 28px;
+	margin: 0 4px 0 0;
+	width: 140px;
+}
+
+.ctfc-modal-close {
+	color: #666;
+	cursor: pointer;
+	height: 36px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	text-align: center;
+	width: 36px;
+}
+
+.ctfc-modal-close:hover {
+	color: #2ea2cc;
+}
+
+.ctfc-modal-close:before {
+	content: '\f158';
+	font: normal 20px/36px 'dashicons';
+	speak: none;
+	vertical-align: top;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
